@@ -50,7 +50,6 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 Y= A⊕B
 
 **Procedure** 
-
 1.	Type the program in Quartus software.
 
 2.	Compile and run the program.
@@ -63,17 +62,37 @@ Y= A⊕B
 
 
 **PROGRAM**
+```
+module exp1 (a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+assign c1=~a;
+assign c2=a & b;
+assign c3= a | b;
+assign c4= ~(a & b);
+assign c5= ~(a | b);
+assign c6= a ^ b;
+assign c7= ~(a ^ b);
+endmodule
+``` 
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+ Developed by:S.Srinithi
+ 
+ RegisterNumber: 25018743
  
 **Logic symbol & Truthtable**
 
+<img width="455" height="522" alt="image" src="https://github.com/user-attachments/assets/d362ed45-eb29-42ed-916f-0f32ecd136a5" />
+<img width="98" height="119" alt="image" src="https://github.com/user-attachments/assets/62ec5e69-ab0f-40b3-9350-16cfa8a6c348" />
+
 **RTL realization Output:** 
+<img width="899" height="509" alt="image" src="https://github.com/user-attachments/assets/23a62e9b-6b5a-4de9-9bed-00f1e08ec8c9" />
 
 **RTL**
+<img width="1362" height="377" alt="image" src="https://github.com/user-attachments/assets/a834ff2d-c602-4e31-a5a7-c472e2ae22df" />
 
 **Result:**
-
+Thus,the truth table of the logic gate is verified in Quartus using verilog programming.
 
